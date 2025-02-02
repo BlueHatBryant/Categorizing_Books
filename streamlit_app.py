@@ -16,6 +16,7 @@ top_topics = get_top_terms(kmeans, vectorizer)
 
 # Streamlit UI
 st.title("Book Categorization App")
+st.write("By BlueHatBryant")
 df.columns = df.columns.str.strip()
 
 # User selects a book
