@@ -1,19 +1,22 @@
-# 🎈 Blank app template
+# Book Categorization App
+This is a Streamlit-based app that categorizes books into different clusters using machine learning techniques. The app takes in a dataset of books and uses K-Means clustering to group them into relevant categories based on book attributes like title, description, and author. The app also displays related topics and allows users to interactively explore the clustering results.
 
-A simple Streamlit app template for you to modify!
+## Features
+Book Selection: Users can select a book from a dropdown list and view the predicted category for that book.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+Predicted vs Actual Category: Displays the predicted category (from the K-Means model) and the actual category from the dataset.
 
-### How to run it on your own machine
+Related Topics: Shows the top related topics to the selected book, with scores indicating the strength of the relationship.
 
-1. Install the requirements
+Cluster Overview: Displays human-readable names for each cluster, helping users understand what each cluster represents.
 
-   ```
-   $ pip install -r requirements.txt
-   ```
+Dynamic K Selection: Users can adjust the number of clusters (K) using a slider, allowing for customization based on dataset size and complexity.
 
-2. Run the app
+Clustering Performance: Displays visualizations of the Elbow Method and Silhouette Score to help determine the optimal number of clusters.
 
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+## Technologies Used
+1. Python: The core programming language for the app.
+2. Streamlit: For building the interactive web interface.
+3. Scikit-learn: For implementing the K-Means clustering algorithm and calculating related terms.
+4. Pandas: For handling the dataset and data manipulation.
+5. Matplotlib: For visualizing the Elbow Method and Silhouette Score graphs.
