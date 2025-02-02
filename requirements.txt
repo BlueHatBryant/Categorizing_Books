@@ -1,5 +1,5 @@
 streamlit
 nltk
-pandas 
-cikit-learn  
+pandas
+scikit-learn
 openpyxl
